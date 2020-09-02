@@ -1,16 +1,12 @@
 # HAR2tavern
 
-[tavern](https://github.com/taverntesting/tavern)是一个pytest插件，用来进行接口自动化测试，通过**YAML**来描述和管理测试用例。
-
+[tavern](https://github.com/taverntesting/tavern) 是一个pytest插件，用来进行接口自动化测试，通过**YAML**来描述和管理测试用例。
 尽管YAML已经十分简洁，但是的接口数量很多时，创建YAML文件依然耗时。
 
 本工具将通过抓包获取到的HAR文件，快速生成tavern所支持的YAML文件，实现快速进行接口自动化的目的。
 
 当然，你也可以对生成的YAML进行修改，以实现复杂业务的测试。
 
-
-
-Generate yaml test cese from HAR file
 
 ## 安装
 ```bash
@@ -23,7 +19,7 @@ pip install pip install har2tavern
 
 1. 基本用法
     ```bash
-    > har2tavern file.harhar2
+    >har2tavern file.harhar2
     
     Output file: ./test_api_1.tavern.yaml
     Output file: ./test_api_2.tavern.yaml
@@ -40,7 +36,7 @@ pip install pip install har2tavern
 2. 更多参数
 
     ```bash
-    har2pytest --help
+    >har2pytest --help
     Usage: har2pytest [OPTIONS] HARFILE
     根据har文件，生成yaml格式的接口自动化测试用例
 
@@ -64,15 +60,19 @@ pip install pip install har2tavern
     python -m venv venv
     source ~/venv/bin/activate
     pip install -r requirements.txt
+    pre-commit install
     ```
 3. 执行测试、 执行检查
-   
-    在写代码之前，要确定你获取的代码是没有问题的
     ```bash
     pytest && pre-commit run --all-files
     ```
-5. 开发代码
 
+    在写代码之前，要确定你获取的代码是没有问题的,所有先执行一次测试
+
+5. 开发代码
+    ```
+    coding....
+   ```
     现在，你可以尽情的编码了。
 
 6. 执行测试 、 执行检查
@@ -93,6 +93,6 @@ pip install pip install har2tavern
 
 ## 贡献
 
-如果你对本工具有更好的想法，欢迎发起PR https://github.com/dongfangtianyu/har2tavern。
+如果你对本工具有更好的想法，欢迎发起PR https://github.com/dongfangtianyu/har2tavern
 
 我们希望PR中有修改的描述、测试用例，并且所有用例全部测试通过。
