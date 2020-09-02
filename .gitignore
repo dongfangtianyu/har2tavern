@@ -49,7 +49,6 @@ test_reports/
 # Translations
 *.mo
 *.pot
-*.yaml
 
 # Django stuff:
 *.log
