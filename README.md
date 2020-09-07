@@ -10,7 +10,7 @@
 
 ## 安装
 ```bash
-pip install pip install har2tavern
+pip install har2tavern
 ```
 
 
