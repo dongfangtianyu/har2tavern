@@ -11,5 +11,5 @@
   filePattern: ^(?!.*conftest).*\.py$
 
 - name: Use relative imports
-  pattern: "import schemathesis|from schemathesis"
+  pattern: "import har2tavern|from har2tavern"
   filePattern: "src/.*.py$"
